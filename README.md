@@ -4,11 +4,10 @@ Adds GPO support (via registry) to Mike Kaply's Firefox CCK2 customization wizar
 Installation instructions
 ------------------------------
 
-[Install CCK2 into Firefox]
-
+*Install CCK2 into Firefox*
 1. Install Mike Kaply's CCK2 extension (https://mike.kaply.com/cck2/) into Firefox. Configure a few test settings in the CCK2 extension GUI interface and "install it" by following its documentation.  After this is done, you should end up with a 'cck2.cfg' file in your Mozilla Firefox program files folder.  Relaunching Firefox should result in those few test settings being applied.
 
-[Add group policy support into CCK2]
+*Add group policy support into CCK2*
 
 2. In your Firefox program files folder (ex: C:\Program Files\Mozilla Firefox\) create a "cck-import-gpo" subfolder and copy "cck-import-gpo.jsm" into it. This is the module that extends CCK2 by reading registry settings defined via group policy settings and applying them into the CCK2.
 
