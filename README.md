@@ -5,6 +5,7 @@ Installation instructions
 ------------------------------
 
 *Install CCK2 into Firefox*
+
 1. Install Mike Kaply's CCK2 extension (https://mike.kaply.com/cck2/) into Firefox. Configure a few test settings in the CCK2 extension GUI interface and "install it" by following its documentation.  After this is done, you should end up with a 'cck2.cfg' file in your Mozilla Firefox program files folder.  Relaunching Firefox should result in those few test settings being applied.
 
 *Add group policy support into CCK2*
@@ -14,6 +15,7 @@ Installation instructions
 3. Included in this repository is a sample 'cck2.cfg' file. To make use of the GPO module from step 2, copy lines 115-140 (the indented lines) from this sample 'cck2.cfg' file into your own 'cck2.cfg' file generated from step 1.  You'll need to add them right ABOVE your last line containing "CCK2.init(...".
 
 *Create group policy settings*
+
 4. Copy the GPO template files into your local system or AD. For example, to experiment with local group policy settings, add 'Firefox-CCK.admx' into your "%WINDIR%\PolicyDefinitions" folder and copy 'Firefox-CCK.adml' into this folder's 'en-us' subfolder.
 
 5. Create a new AD group policy or edit your local group policy (run gpedit.msc) with custom Firefox settings. The settings are found under Computer Configuration | Administrative Templates | Mozilla | Firefox.  Basic settings descriptions are provided.  For more details on specific settings, you'll need to run the CCK2 wizard and read the notes provided within the GUI.
