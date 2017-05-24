@@ -18,7 +18,7 @@ Installation instructions
 
 4. Copy the GPO template files into your local system or AD. For example, to experiment with local group policy settings, add 'Firefox-CCK.admx' into your "%WINDIR%\PolicyDefinitions" folder and copy 'Firefox-CCK.adml' into this folder's 'en-us' subfolder.
 
-5. Create a new AD group policy or edit your local group policy (run gpedit.msc) with custom Firefox settings. The settings are found under Computer Configuration | Administrative Templates | Mozilla | Firefox.  Basic settings descriptions are provided.  For more details on specific settings, you'll need to run the CCK2 wizard and read the 
+5. Create a new AD group policy or edit your local group policy (run gpedit.msc) with custom Firefox settings. The settings are found under Computer Configuration | Administrative Templates | Mozilla | Firefox.  Basic settings descriptions are provided.  For more details on specific settings, you'll need to run the CCK2 wizard and read the notes provided within the GUI.
 
 cheers,
 Scott
