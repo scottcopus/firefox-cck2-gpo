@@ -21,4 +21,5 @@ Installation instructions
 5. Create a new AD group policy or edit your local group policy (run **gpedit.msc**) with custom Firefox settings. The settings are found under *Computer Configuration | Administrative Templates | Mozilla | Firefox*.  Basic settings descriptions are provided.  For more details on specific settings, you'll need to run the CCK2 wizard and read the notes provided within the GUI.
 
 cheers,
+
 Scott
