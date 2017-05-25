@@ -1,5 +1,8 @@
 # firefox-cck2-gpo
-Adds group policy (GPO) support (via registry) to Mike Kaply's Firefox CCK2 customization wizard.  This works by reading group policy settings from all the the registry key values under '*HKLM:\Software\Policies\Mozilla\Firefox*' and merging them into the CCK2 configuration environment. Included are group policy template ADMX/ADML files. Adding new settings is as simple as creating an equivalent '*cck.config.SETTINGNAME*' registry value (or edit the ADMX/ADML files with those settings) that matches the same '*SETTINGNAME*' inside of CCK2's "*config*" object variable. Any '*cck.config.SETTINGNAME*' should override any locally defined '*SETTINGNAME*' within the CCK2's '**cck2.cfg**' file.
+
+Adds group policy (GPO) support (via registry) to Mike Kaply's Firefox CCK2 customization wizard.  Includes group policy template ADMX/ADML files.
+
+This enhancement to CCK2 works by reading group policy settings from all the the registry key values under '*HKLM:\Software\Policies\Mozilla\Firefox*' and merging them into the CCK2 configuration environment. Included are group policy template ADMX/ADML files. Adding new settings is as simple as creating an equivalent '*cck.config.SETTINGNAME*' registry value (or edit the ADMX/ADML files with those settings) that matches the same '*SETTINGNAME*' inside of CCK2's "*config*" object variable. Any '*cck.config.SETTINGNAME*' should override any locally defined '*SETTINGNAME*' within the CCK2's '**cck2.cfg**' file.
 
 Installation instructions
 ------------------------------
