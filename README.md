@@ -6,6 +6,7 @@ This enhancement to CCK2 works by reading group policy settings from all the the
 
 **Note**: If you need to add any settings that are nested into their own **object** variable (has member/child values), you need to modify the GPO template files to support them.  For example, if you need to configure the following "network" settings:
 
+```javascript
 var config = {
   "root_setting1": "root_value_1",
   "root_setting2": "root_value_2",
@@ -16,9 +17,13 @@ var config = {
   }
   "root_settingN": "root_value_N"
 }
+```
 
 To support the CCK2-equivalent of the "network" settings above, edit the GPO template files to add a new "cck.config.network" policy with the following value:
+
+```javascript
     JSON:{"proxyHTTP":"proxyHTTP_value1","locked":true,"network_settingN":"network_valueN"}
+```
 
 The existing policies for "cck.config.permissions" and "cck.config.preferences" behave this way. You can edit the GPO template files and clone one of these into your own new "cck.config.network" policy.
 
