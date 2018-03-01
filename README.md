@@ -17,7 +17,9 @@ var config = {
   "root_settingN": "root_value_N"
 }
 
-To support the CCK2-equivalent of the "network" settings above, edit the GPO template files to add a new "cck.config.network" policy with the following value:  JSON:{"proxyHTTP":"proxyHTTP_value1","locked":true,"network_settingN":"network_valueN"}
+To support the CCK2-equivalent of the "network" settings above, edit the GPO template files to add a new "cck.config.network" policy with the following value:
+    JSON:{"proxyHTTP":"proxyHTTP_value1","locked":true,"network_settingN":"network_valueN"}
+
 The existing policies for "cck.config.permissions" and "cck.config.preferences" behave this way. You can edit the GPO template files and clone one of these into your own new "cck.config.network" policy.
 
 Installation instructions
